@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello JS</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <span>Hello! JS</span>
+    </header>
+
+    <main>
+      <span>Player 1: Chris</span>
+
+      <button>Button</button>
+
+      <!--It is inefficient!!-->
+      <input type="button" value="Button" onclick="createParagraph()" />
+    </main>
+
+    <!--It is inefficient!!-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function createParagraph() {
+          let para = document.createElement("span");
+          para.textContent = "You clicked the button!";
+          document.querySelector("main").appendChild(para);
+        }
+
+        const buttons = document.querySelectorAll("button");
+
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].addEventListener("click", createParagraph);
+        }
+      });
+    </script>
+    <script src="script/index.js"></script>
+  </body>
+</html>

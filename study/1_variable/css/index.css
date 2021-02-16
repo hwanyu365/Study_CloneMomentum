@@ -1,0 +1,55 @@
+body,
+main {
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+main span {
+  font-family: "helvetica neue", helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 200, 0.6);
+  background: rgba(0, 0, 200, 0.3);
+  color: rgba(0, 0, 200, 0.6);
+  box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+  border-radius: 10px;
+  padding: 3px 10px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 2px 0px;
+}
+
+button,
+input[type="button"] {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(255, 99, 71, 0.3);
+  font-size: 15px;
+  padding: 5px 8px;
+  transition: all 0.3s ease-in-out;
+  margin: 2px 0px;
+}
+
+input[type="button"]:active,
+input[type="button"]:focus,
+button:active,
+button:focus {
+  outline: none;
+}
+
+input[type="button"]:hover,
+button:hover {
+  background-color: yellowgreen;
+  color: white;
+}

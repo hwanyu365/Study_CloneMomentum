@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number guessing game</title>
+    <link rel="stylesheet" href="css/number_guessing_game.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Number guessing game</h1>
+    </header>
+
+    <main>
+      <div class="container-content">
+        <span class="description">
+          We have selected a random number between 1 and 100. See if you can
+          guess it in 10 turns or less. We'll tell you if your guess was too
+          high or too low.
+        </span>
+
+        <div class="container-answer">
+          <label for="container-answer__input">Enter a guess: </label>
+          <input id="container-answer__input" type="number" />
+          <button id="container-answer__btn-submit">Submit guess</button>
+        </div>
+
+        <div class="container-result">
+          <span id="container-result__prev_guesses"></span>
+          <span id="container-result__result"></span>
+          <span id="container-result__reason"></span>
+          <button id="container-result__btn-restart">Start new game</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script/number_guessing_game.js"></script>
+  </body>
+</html>

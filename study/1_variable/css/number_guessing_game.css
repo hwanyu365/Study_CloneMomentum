@@ -1,0 +1,41 @@
+header h1 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container-content {
+  width: 60%;
+}
+
+.container-answer {
+  display: flex;
+  margin: 25px 0px;
+}
+
+#container-answer__input {
+  margin: 0px 10px;
+}
+
+#container-answer__input::-webkit-outer-spin-button,
+#container-answer__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#container-result__btn-restart {
+  display: none;
+}
+
+.container-result {
+  display: none;
+  flex-direction: column;
+}
+
+.container-result span:nth-child(n + 2),
+.container-result button {
+  margin-top: 10px;
+}
