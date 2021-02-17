@@ -14,6 +14,17 @@ header {
   font-weight: 600;
 }
 
+#title {
+  transition: all 0.5s ease-in-out;
+}
+.title-turquoise {
+  color: turquoise;
+}
+
+#title::selection {
+  background: none;
+}
+
 main span {
   font-family: "helvetica neue", helvetica, sans-serif;
   letter-spacing: 1px;
