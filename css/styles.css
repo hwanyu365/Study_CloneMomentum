@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import "variables.css";
+@import "index.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: var(--color-body-bg);
+  font-family: var(--font-regular);
+  font-weight: 600;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-showing {
+  display: block;
+}
